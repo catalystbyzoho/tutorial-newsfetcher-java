@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "targets": [
+      "NewsFetch",
+      "NewsApp_AIO"
+    ],
+    "ignore": [
+      ".output",
+      ".project",
+      ".classpath"
+    ],
+    "source": "functions"
+  },
+  "client": {
+    "source": "client"
+  }
+}

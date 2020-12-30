@@ -1,0 +1,10 @@
+{
+	"deployment": {
+		"name": "NewsApp_AIO",
+		"stack": "java8",
+		"type": "advancedio"
+	},
+	"execution": {
+		"main": "DatastoreFetch"
+	}
+}

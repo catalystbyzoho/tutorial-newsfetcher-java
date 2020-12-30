@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<title>NewsApp</title>
+<script src="main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="fetchNews('HEADLINES')">
+
+    <center>
+        <h1>Welcome to The Daily Broadcast</h1>
+        <h3>Today's News</h3>
+        <h2>HEADLINES</h2><br>
+    </center>
+    <div class="sidenav">
+        <img src="https://i.pinimg.com/236x/e6/71/5f/e6715f8bd963c783f75f11fdc37fa4aa.jpg" width="220" height="200"
+            onclick="fetchNews('HEADLINES')"><br>
+        <a onclick="return fetchNews('BUSINESS');">Business</a><br>
+        <a onclick="return fetchNews('ENTERTAINMENT');">Entertainment</a><br>
+        <a onclick="return fetchNews('HEALTH');">Health</a><br>
+        <a onclick="return fetchNews('SCIENCE');">Science</a><br>
+        <a onclick="return fetchNews('SPORTS');">Sports</a><br>
+        <a onclick="return fetchNews('TECHNOLOGY');">Technology</a><br>
+    </div>
+
+    <div class="loading" id="loader" style="display: none;"></div>
+
+    <div class="main">
+        <ul id="newsList"></ul>
+    </div>
+
+</body>
+
+</html>

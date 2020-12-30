@@ -1,0 +1,10 @@
+{
+	"deployment": {
+		"name": "NewsFetch",
+		"stack": "java8",
+		"type": "cron"
+	},
+	"execution": {
+		"main": "FetchNews"
+	}
+}
